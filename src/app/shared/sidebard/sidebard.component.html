@@ -7,7 +7,9 @@
         <hr class="text-light">
 
         <div class="list-group list-reset">
-            <a href="#" class="list-group-item list-group-item-action bg-light">Dashboard</a>
+            @for (item of historialGifs; track $index) {
+                <a href="#" class="list-group-item list-group-item-action bg-light"> {{item | titlecase}} </a>
+            }
         </div>
 
     </div>
