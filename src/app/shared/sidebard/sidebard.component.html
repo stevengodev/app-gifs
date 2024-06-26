@@ -7,8 +7,11 @@
         <hr class="text-light">
 
         <div class="list-group list-reset">
-            @for (item of historialGifs; track $index) {
-                <a href="#" class="list-group-item list-group-item-action bg-light"> {{item | titlecase}} </a>
+            @for (gif of historialGifs; track $index) {
+                <a href="#" class="list-group-item list-group-item-action bg-light"
+                    (click)="buscarPorSidebard(gif)"> 
+                    {{gif | titlecase}}
+                </a>
             }
         </div>
 

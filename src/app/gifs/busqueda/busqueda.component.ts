@@ -31,6 +31,7 @@ export class BusquedaComponent {
       return
     }
 
+
     this.gifsService.buscarGifs(nombreGifs)
     this.txtGifs.nativeElement.value = ''
   }
